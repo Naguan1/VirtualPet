@@ -11,11 +11,12 @@ public void draw() {
   background(192);
   int y = arduino.analogRead(5);
   System.out.println(y);
+  stroke(-1*y,-1*y,-1*y);
   background(1*y,1*y,1*y);
    fill(255, 192, 203);
-ellipse(180,380,30,80);
+ellipse(180,360,30,1*y);
 fill(255, 192, 203);
-ellipse(220,380,30,80);
+ellipse(220,360,30,1*y);
   fill(128, 128, 128);
 ellipse(180,50,30,0.75*y);
   fill(128, 128, 128);
@@ -32,11 +33,13 @@ fill(2*y,0,0);
 ellipse(212.5,70,30,40);
 line(187.5,50,187.5,89);
 line(212.5,50,212.5,89);
-stroke(0, 0, 0);
 line(160,220,100,2*y);
 line(240,220,310,2*y);
 fill(255, 192, 203);
 ellipse(200,155,20,0.15*y);
 fill(255, 253, 208);
 ellipse(200,265,60,120);
+line(185,40,200,50);
+line(215,40,200,50);
+
 }
